@@ -1,6 +1,7 @@
 <p class="pageHeader">All Managers</p>
 <div>
-    <a href="/managers/new" class="button center">New Manager</a>  <!-- NEW -->
+    <a href="/managers/new" class="button center">New Manager</a>
+    <a href="/managers/:id" class="button center">More details</a>
 </div>
 
 <table>
@@ -9,7 +10,6 @@
        <th>lastName</th>
        <th>budget</th>
        <th>department</th>
-
    </tr>
 
     #foreach($manager in $managers)
