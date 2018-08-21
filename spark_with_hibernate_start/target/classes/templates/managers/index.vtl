@@ -1,0 +1,24 @@
+<p class="pageHeader">All Managers</p>
+<div>
+    <a href="/managers/new" class="button center">New Manager</a>  <!-- NEW -->
+</div>
+
+<table>
+   <tr>
+      <th>firstName</th>
+       <th>lastName</th>
+       <th>budget</th>
+       <th>department</th>
+
+   </tr>
+
+    #foreach($manager in $managers)
+    <tr>
+        <td>$manager.getFirstName()</td>
+        <td>$manager.getLastName()</td>
+        <td>$manager.getBudget()</td>
+        <td>$manager.getDepartment().getTitle()</td>
+    </tr>
+    #end
+
+</table>
